@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>18-Day Interview Sprint Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow mono">Placement Prep · June 2027</div>
+  <div class="hero">
+    <div class="hero-left">
+      <h1>18-Day Interview Sprint</h1>
+      <p>DBMS-first, deep-dive. Track every sub-topic.</p>
+    </div>
+    <button class="reset-btn" id="reset-btn" title="Reset all progress">Reset</button>
+  </div>
+
+  <div class="stats-row">
+    <div class="stat">
+      <div class="lbl mono">Tasks done</div>
+      <div class="val" id="s-done">0 <span>/ 0</span></div>
+    </div>
+    <div class="stat">
+      <div class="lbl mono">Complete</div>
+      <div class="val" id="s-pct">0<span>%</span></div>
+    </div>
+    <div class="stat">
+      <div class="lbl mono">Days done</div>
+      <div class="val" id="s-days">0 <span>/ 18</span></div>
+    </div>
+  </div>
+
+  <div class="prog-bar">
+    <div class="prog-fill" id="prog" style="width:0%"></div>
+  </div>
+
+  <div class="section-label mono">Days — click to jump</div>
+  <div class="grid" id="grid"></div>
+
+  <div class="panel">
+    <div class="panel-top">
+      <div class="panel-meta">
+        <div class="day-num mono" id="p-num">Day 1 of 18</div>
+        <h2 id="p-title"></h2>
+        <div class="link-row">
+          <a id="p-link" href="#" target="_blank" rel="noopener">📎 View answers on GitHub →</a>
+          <button id="p-link-edit" type="button">+ Add link</button>
+        </div>
+      </div>
+      <div class="badge" id="p-badge"></div>
+    </div>
+    <div class="day-prog">
+      <span id="p-count">0 / 0</span>
+      <div class="mini-bar"><div class="mini-fill" id="p-bar" style="width:0%"></div></div>
+    </div>
+    <button class="complete-all" id="btn-all">Mark all complete</button>
+    <div id="p-tasks"></div>
+    <div class="nav">
+      <button id="prev">← Prev</button>
+      <button id="next">Next →</button>
+    </div>
+  </div>
+
+  <div class="save-note mono" id="save-note">Progress saves to localStorage</div>
+</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
